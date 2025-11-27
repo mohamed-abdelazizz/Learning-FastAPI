@@ -6,7 +6,6 @@ app = FastAPI()
 # ---------------------------
 # HTTP Methods Endpoints
 # ---------------------------
-
 @app.get("/", description="GET endpoint")
 async def get_fun():
     # Retrieves data (non-modifying)
@@ -47,6 +46,7 @@ PUT:
     - Requires sending full object
     - Idempotent
 """
+
 
 # ---------------------------
 # FastAPI Core Concepts

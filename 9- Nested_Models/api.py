@@ -87,7 +87,7 @@ async def create_product(
 
 
 # ---------------------------------------------------------
-# WHY USE BaseModel, Field, and HttpUrl?
+# WHY HttpUrl?
 # ---------------------------------------------------------
 """
 HttpUrl:

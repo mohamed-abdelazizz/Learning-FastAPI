@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+
 # -----------------------------------
 # Root Endpoint
 # -----------------------------------

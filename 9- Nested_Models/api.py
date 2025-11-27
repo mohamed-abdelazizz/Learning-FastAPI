@@ -90,8 +90,6 @@ async def create_product(
 # WHY HttpUrl?
 # ---------------------------------------------------------
 """
-HttpUrl:
---------
 - Automatically validates strings to ensure they are proper URLs.
 - Prevents invalid or malformed URLs.
 - No need to manually write regex for URLs.

@@ -12,9 +12,9 @@ My goal is to bridge the gap between model development and model deployment, ens
 
 As an AI Engineer, building the model is only half the battle. Serving that model efficiently to users or other systems is equally critical. I created this repository to:
 
+- **Create a reference** for future projects involving ML deployment.
 - **Deepen my understanding** of modern web frameworks.
 - **Practice best practices** in API development.
-- **Create a reference** for future projects involving ML deployment.
 
 ## 📂 Folder Structure
 

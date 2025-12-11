@@ -60,3 +60,4 @@ async def read_items(
         "min_price": min_price,
         "max_price": max_price
     }
+    

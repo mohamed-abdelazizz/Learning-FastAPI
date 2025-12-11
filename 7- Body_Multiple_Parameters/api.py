@@ -9,7 +9,8 @@ app = FastAPI()
 # -----------------------------------
 @app.get("/")
 async def read_root():
-    return {"message": "Hello World!"}
+    # Returns a simple greeting message
+    return {"message": "Hello, World!"}
 
 
 # -----------------------------------

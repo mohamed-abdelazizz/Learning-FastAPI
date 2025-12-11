@@ -90,9 +90,9 @@ async def create_product(
     }
 
 
-# ---------------------------------------------------------
-# WHY HttpUrl?
-# ---------------------------------------------------------
+# -----------------------------------
+# Why Use HttpUrl?
+# -----------------------------------
 """
 - Automatically validates strings to ensure they are proper URLs.
 - Prevents invalid or malformed URLs.

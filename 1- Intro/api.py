@@ -6,7 +6,6 @@ app = FastAPI()
 # ---------------------------
 # HTTP Methods Endpoints
 # ---------------------------
-
 @app.get("/", description="GET endpoint")
 async def get_fun():
     # Retrieves data (non-modifying)
@@ -32,21 +31,22 @@ async def put_fun():
 """
 Idempotent = sending the same request multiple times gives the same final result.
 
-GET:
+1) GET:
     - Retrieve data from the server
     - Should not modify data
     - Idempotent
 
-POST:
+2) POST:
     - Create new data
     - Sends data in request body
     - Not idempotent (repeating creates duplicates)
 
-PUT:
+3) PUT:
     - Update/replace existing data
     - Requires sending full object
     - Idempotent
 """
+
 
 # ---------------------------
 # FastAPI Core Concepts
@@ -54,13 +54,13 @@ PUT:
 """
 1) Starlette:
     - FastAPI is built on top of Starlette.
+    - FastAPI adds automatic docs and validation using Pydantic.
     - Starlette provides core web features:
         * Routing
         * Middleware
         * Requests & Responses
         * Background tasks
         * WebSockets
-    - FastAPI adds automatic docs and validation
 
 2) Pydantic:
     - Used for:
@@ -71,7 +71,7 @@ PUT:
 
 3) Uvicorn:
     - ASGI server to run FastAPI
-    - Command: uvicorn main:app --reload
+    - Command: uvicorn api:app --reload
 """
 
 

@@ -8,7 +8,8 @@ app = FastAPI()
 # -----------------------------------
 @app.get("/")
 async def read_root():
-    return {"message": "Hello World!"}
+    # Returns a simple greeting message
+    return {"message": "Hello, World!"}
 
 
 # -----------------------------------
@@ -25,7 +26,7 @@ async def read_item(
     )
 ):
     """
-    Validates `item_id`:
+    Validates "item_id":
     - Must be >= 1
     - Must be <= 1000
     """

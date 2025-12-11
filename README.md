@@ -8,6 +8,14 @@ This repository is a structured collection of examples and exercises covering th
 
 My goal is to bridge the gap between model development and model deployment, ensuring that my AI solutions are production-ready.
 
+## 🎯 Why I Created This Repo
+
+As an AI Engineer, building the model is only half the battle. Serving that model efficiently to users or other systems is equally critical. I created this repository to:
+
+- **Deepen my understanding** of modern web frameworks.
+- **Practice best practices** in API development.
+- **Create a reference** for future projects involving ML deployment.
+
 ## 📂 Folder Structure
 
 Each folder corresponds to a specific topic or concept in FastAPI:
@@ -18,27 +26,10 @@ Each folder corresponds to a specific topic or concept in FastAPI:
 | `3- Query_Parameters` | Filtering and sorting data using query strings. |
 | `4- Request_Body` | Sending JSON data to the API using Pydantic models. |
 | `5- String_Validation` | Enforcing constraints and validation on string inputs. |
-| `6- Numeric_Validation` | Validating integer and float inputs (min/max values). |
+| `6- Numeric_Validation` | Validating integer and float inputs. |
 | `7- Body_Multiple_Parameters` | Handling mixed path, query, and multiple body parameters. |
 | `8- Fields` | Advanced field validation and metadata for models. |
-| `9- Nested_Models` | Working with complex, hierarchical JSON structures. |
-
-## 🎯 Why I Created This Repo
-
-As an AI Engineer, building the model is only half the battle. Serving that model efficiently to users or other systems is equally critical. I created this repository to:
-
-- **Deepen my understanding** of modern web frameworks.
-- **Practice best practices** in API development.
-- **Create a reference** for future projects involving ML deployment.
-
-## 🧠 What I Learned
-
-Through these exercises, I have gained hands-on experience with:
-
-- **Type Hinting**: Leveraging Python's type system for automatic validation.
-- **Pydantic**: Defining data schemas and validating incoming requests.
-- **Automatic Docs**: Utilizing Swagger UI and ReDoc for interactive API documentation.
-- **Asynchronous Programming**: Writing `async` endpoints for high performance.
+| `9- Nested_Models` | Working with hierarchical JSON structures. |
 
 ## 🛠️ Getting Started
 
@@ -74,12 +65,12 @@ Follow these steps to clone and run the code examples locally.
 
 ## 🏃 How to Run Examples
 
-You can run any example file using `uvicorn`. Navigate to the specific folder or run it from the root.
+You can run any example file using `uvicorn`. Navigate to the specific folder and run the api.
 
 **Example: Running the Intro API**
 
 ```bash
-cd "1- Intro"
+cd 1- Intro
 uvicorn api:app --reload
 ```
 

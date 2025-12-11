@@ -63,8 +63,7 @@ async def get_items_by_price(max_range: str = None):
             max_price = int(max_range)
         except ValueError:
             return {"error": "Invalid max_range value. Please provide a numeric value."}
-        filtered_items = [item for item in sorted_items if int(
-            item["price"]) <= max_price]
+        filtered_items = [item for item in sorted_items if int(item["price"]) <= max_price]
         return filtered_items
 
     return sorted_items

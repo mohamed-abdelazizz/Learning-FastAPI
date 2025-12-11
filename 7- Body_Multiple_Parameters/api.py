@@ -3,11 +3,10 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+
 # -----------------------------------
 # Root Endpoint
 # -----------------------------------
-
-
 @app.get("/")
 async def read_root():
     return {"message": "Hello World!"}

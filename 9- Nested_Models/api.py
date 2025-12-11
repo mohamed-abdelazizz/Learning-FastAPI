@@ -6,8 +6,6 @@ app = FastAPI()
 # -----------------------------------
 # Root Endpoint
 # -----------------------------------
-
-
 @app.get("/")
 async def read_root():
     return {"message": "Hello, World!"}
@@ -89,11 +87,9 @@ async def create_product(
 
 
 # ---------------------------------------------------------
-# WHY USE BaseModel, Field, and HttpUrl?
+# WHY HttpUrl?
 # ---------------------------------------------------------
 """
-HttpUrl:
---------
 - Automatically validates strings to ensure they are proper URLs.
 - Prevents invalid or malformed URLs.
 - No need to manually write regex for URLs.

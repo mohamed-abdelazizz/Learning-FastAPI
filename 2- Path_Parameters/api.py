@@ -9,7 +9,7 @@ app = FastAPI()
 # ---------------------------
 @app.get("/users")
 async def get_users():
-    # Returns a simple list of users (mocked)
+    # Returns a simple list of users
     return {"message": "List of users"}
 
 
@@ -53,6 +53,6 @@ async def get_user_by_role(role: UserRole, user_id: int):
 Summary Notes:
 ---------------
 1) Static routes should come BEFORE dynamic routes to avoid conflicts.
-2) include_in_schema=False hides endpoints from automatic docs.
+2) include_in_schema=False hides endpoints from automatic docs to be secure.
 3) Enum classes are useful to restrict path parameter values.
 """
